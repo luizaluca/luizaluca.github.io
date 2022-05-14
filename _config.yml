@@ -1,26 +1,26 @@
-title: Catalin Ionescu - Consulting Software Engineer
+title:
 logo:
-description: Senior Ruby on Rails and React Engineer. Passionate about data science. Aspiring 10% entrepreneur. Blogging about tech and side-project growth.
+description:
 baseurl: ""
-url: "https://catalinionescu.dev"
+url:
 phone_number: 0723967904
 
 # Author Settings
 author:
-  name: Catalin Ionescu
+  name:
   image: "/assets/img/profile_square.png"
-  job: Consulting Software Engineer
-  bio: Senior Ruby on Rails and React Engineer. Passionate about data science. Aspiring 10% entrepreneur. Blogging about tech and side-project growth.
-  email: catalin.ionescu282@gmail.com
+  job:
+  bio:
+  email:
 
 # Contact links
 contact:
   - name: Twitter
-    link: https://twitter.com/cionescu1
+    link:
   - name: Github
-    link: https://github.com/cionescu
+    link:
   - name: Linkedin
-    link: https://www.linkedin.com/in/ciionescu/
+    link:
 
 # Google Analytics
 gtm_id: 'GTM-KDHH99M'
