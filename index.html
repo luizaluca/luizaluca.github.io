@@ -11,10 +11,10 @@ layout: default
       class="w-full h-full object-center object-cover"
     />
   </div>
-  <div
+  <!--<div
     aria-hidden="true"
     class="absolute inset-0 bg-gradient-to-r from-gradiant_color to-gray-100 opacity-50"
-  ></div>
+  ></div>-->
 
   <!-- Navigation -->
 
@@ -28,32 +28,27 @@ layout: default
         >
           <div>
             <h1
-              class="mt-4 text-4xl tracking-tight font-light text-gray-800 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+              class="my-4 text-4xl tracking-wide font-light text-gray-800 sm:my-5 sm:text-6xl lg:my-6 xl:text-6xl"
             >
-              <span class="block">Children Are Our</span>
-            </h1>
-            <h1
-              class="text-4xl tracking-tight font-bold text-white sm:text-6xl xl:text-6xl"
-            >
-              <span class="pb-3 block text-medicenter_color sm:pb-5">
-                Special Patients</span
-              >
+              <span class="block pb-3 sm:pb-5">
+                <span class="text-medicenter_color">Copiii</span>
+                sunt cei mai
+              </span>
+              <span class="font-semibold">îndrăgiți pacienți</span>
             </h1>
             <p
               class="text-base text-gray-600 sm:text-xl lg:text-lg xl:text-xl"
             >
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-              qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam
-              occaecat fugiat.
+              Deși uneori poate fi dificil de stabilit o conexiune cu un mini-pacient, acesta este scopul meu!
             </p>
             <div class="mt-10 sm:mt-12">
               <form action="#" class="sm:max-w-xs sm:mx-auto lg:mx-0">
                 <div class="mt-3 sm:mt-0">
-                  <button
-                    type="submit"
-                    class="w-full flex items-center justify-center px-2 py-5 border border-transparent text-base font-normal uppercase rounded-none text-white bg-secondary_medicenter_color focus:outline-none focus:ring-0"
+                  <a
+                    href="tel://{{site.phone_number}}"
+                    class="w-full flex items-center justify-center px-2 py-5 border border-transparent text-base font-normal uppercase rounded-none text-white bg-medicenter_color focus:outline-none focus:ring-0"
                   >
-                    Purchase Theme
+                    Hai să discutăm!
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6 ml-4"
@@ -68,7 +63,7 @@ layout: default
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       ></path>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </form>
             </div>
