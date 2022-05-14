@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    rel="canonical"
+    href="{{ page.url | replace:'index.html','' | absolute_url }}"
+  />
+
+  {% seo %}
+
+  {% if jekyll.environment == "production" %}
+    {% include gtm.html %}
+  {% endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Catalin Ionescu",
+    "url": "https://catalinionescu.dev/",
+    "image": "https://catalinionescu.dev/assets/img/profile_square.png",
+    "sameAs": [
+      "https://www.facebook.com/ciionescu/",
+      "https://twitter.com/cionescu1",
+      "https://www.linkedin.com/in/ciionescu/",
+      "https://github.com/cionescu"
+    ],
+    "jobTitle": "Senior Full Stack Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Mon Ami"
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            medicenter_color: "#c471a3",
+            gradiant_color: "#e2dedf",
+            secondary_medicenter_color: "#8c9cac",
+            third_color: "#667788",
+          },
+        },
+      },
+    };
+  </script>
+  <script
+    defer
+    src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+  ></script>
+  <style>
+    html, body {
+      font-family: 'Cardo', serif;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+</head>
