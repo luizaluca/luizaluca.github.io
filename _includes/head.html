@@ -1,0 +1,50 @@
+<head>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    rel="canonical"
+    href="{{ page.url | replace:'index.html','' | absolute_url }}"
+  />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
+    rel="stylesheet"
+  />
+
+  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
+
+  {% seo %}
+
+  {% if site.tags != "" %}
+    {% include collect_tags.html %}
+  {% endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Catalin Ionescu",
+    "url": "https://catalinionescu.dev/",
+    "image": "https://catalinionescu.dev/assets/img/profile_square.png",
+    "sameAs": [
+      "https://www.facebook.com/ciionescu/",
+      "https://twitter.com/cionescu1",
+      "https://www.linkedin.com/in/ciionescu/",
+      "https://github.com/cionescu"
+    ],
+    "jobTitle": "Senior Full Stack Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Mon Ami"
+    }
+  }
+  </script>
+</head>

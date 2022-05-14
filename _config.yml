@@ -1,0 +1,60 @@
+title: Catalin Ionescu - Consulting Software Engineer
+logo:
+description: Senior Ruby on Rails and React Engineer. Passionate about data science. Aspiring 10% entrepreneur. Blogging about tech and side-project growth.
+baseurl: ""
+url: "https://catalinionescu.dev"
+
+# Author Settings
+author:
+  name: Catalin Ionescu
+  image: "/assets/img/profile_square.png"
+  job: Consulting Software Engineer
+  bio: Senior Ruby on Rails and React Engineer. Passionate about data science. Aspiring 10% entrepreneur. Blogging about tech and side-project growth.
+  email: catalin.ionescu282@gmail.com
+
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/cionescu1
+  - name: Github
+    link: https://github.com/cionescu
+  - name: Linkedin
+    link: https://www.linkedin.com/in/ciionescu/
+
+# Comment Section (Disqus)
+disqus-identifier: blog-zm4kkydhzz # add your shortname for Disqus Comment. For example mr-brown
+
+# Google Analytics
+google-analytics: UA-41218514-4
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir: tag
+tag_page_layout: tag-page
+tag_permalink_style: pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
