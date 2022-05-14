@@ -22,11 +22,8 @@ contact:
   - name: Linkedin
     link: https://www.linkedin.com/in/ciionescu/
 
-# Comment Section (Disqus)
-disqus-identifier: blog-zm4kkydhzz # add your shortname for Disqus Comment. For example mr-brown
-
 # Google Analytics
-google-analytics: UA-41218514-4
+gtm_id: 'GTM-KDHH99M'
 
 # Build settings
 markdown: kramdown

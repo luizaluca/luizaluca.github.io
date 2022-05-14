@@ -9,22 +9,10 @@
     href="{{ page.url | replace:'index.html','' | absolute_url }}"
   />
 
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
-    rel="stylesheet"
-  />
-
-  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
-
   {% seo %}
 
-  {% if site.tags != "" %}
-    {% include collect_tags.html %}
+  {% if jekyll.environment == "production" %}
+    {% include gtm.html %}
   {% endif %}
 
   <script type="application/ld+json">
@@ -47,4 +35,32 @@
     }
   }
   </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            medicenter_color: "#c471a3",
+            gradiant_color: "#e2dedf",
+            secondary_medicenter_color: "#8c9cac",
+            third_color: "#667788",
+          },
+        },
+      },
+    };
+  </script>
+  <script
+    defer
+    src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+  ></script>
+  <style>
+    html, body {
+      font-family: 'Cardo', serif;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
 </head>
