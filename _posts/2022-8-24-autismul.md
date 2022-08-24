@@ -3,7 +3,7 @@ layout: post
 title: CUM TRATĂM COPIII CU AUTISM ÎN CABINETUL DE MEDICINĂ DENTARĂ?
 description: Tulburarea de spectru autist (TSA) este o deficiență complexă de dezoltare care presupune afectarea interacțiunilor sociale, comunicarea verbală și non-verbală și poate implica un comportament restrictiv sau repetitiv
 published_date: 24 August 2022
-image:
+image: /assets/img/posts/autism.png
 tags: []
 ---
 
