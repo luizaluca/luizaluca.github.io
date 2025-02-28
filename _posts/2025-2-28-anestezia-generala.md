@@ -8,6 +8,7 @@ tags: []
 ---
 
 Având în vedere că trăim în era stomatologiei moderne, blânde, opțiunea de a imobiliza un copil și a-i efectua diverse tratamente stomatologice cu forța iese din ecuație. 
+
 Niciun medic specialist pedodont nu va apela la această metodă, pe parcursul mai multor ședințe, deoarece există repercursiuni grave asupra copilului pe termen lung, iar noi ne dorim să modelăm comportamentul unui copil, astfel încât acesta să devină un adult cooperant, care nu amână tratamentele necesare. Știu, este o decizie dificilă și nu ai ajuns să citești acest articol din întâmplare, așa că, hai să îți povestesc tot ce presupune această procedură. 
 
 ## De ce luăm în considerare anestezia generală?
@@ -21,11 +22,15 @@ Deși nu vreau să te încarc cu idei de specialitate, iată când Asociația Am
 * pentru cazurile grave care au nevoie de o intervenție imediată
 
 Copiii mici, de aproximativ 3 ani și copiii până la 11 ani pot manifesta sentimente de frică dentară, nervozitate, anxietate sau fobie. Dar ce înseamnă fiecare dintre acestea?
+
 Frica dentară este o emoție firească, apărând la foarte mulți copii, ca răspuns la un stimul extern, cum este tratamentul stomatologic.
+
 Anxietatea dentară reprezintă un sentiment accentuat de teamă sau neîncredere, nejustificate, de cele mai multe ori, copilul anticipând situații negative care i se pot întâmpla. Experiențele anterioare neplăcute sau fricile și amintirile neplăcute ale părinților de la dentist pot duce la accentuarea stării de anxietate. Când cel mic îi aude pe părinți plângându-se de mersul la dentist sau este amenințat cu injecție sau durere, acesta va reacționa negativ în contextul unei vizite la medicul pedodont. 
+
 Fobia dentară este o frică exagerată, care nu poate fi explicată, nu poate fi controlată, iar copilul evită să fie sincer cu privire la disconfortul pe care îl simte la nivelul dinților, pentru a evita situațiile care să îl supună unui tratament dentar. 
 
 De cele mai multe ori, părinții vin în cabinet cu cel mic atunci când există probleme dentare grave, multiple, care nu mai permit copilului să se alimenteze corespunzător și care îl afectează grav: probleme de sănătate (carențe nutriționale), probleme de vorbire, probleme de integrare în colectiv (dinții cariați pot fi motiv de bullying). 
+
 În această fază, părintele pune o presiune foarte mare atât pe copil, pentru a coopera și rezolva aceste probleme, dar și pe medic, pentru a face cât mai multe într-o singură ședință. Ce nu realizează părintele este că această presiune este resimțită puternic de copil, acesta fiind de multe ori inhibat, nedorind să coopereze cu medicul pedodont. 
 
 ## De ce le este frică celor mici?
