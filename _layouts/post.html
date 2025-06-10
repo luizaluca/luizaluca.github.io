@@ -14,7 +14,25 @@ layout: default
     {% endif %}
 
     <div class="blog-content mt-6 jost">
-      {{ content }}
+      {% if page.banner %}
+        {% assign banner_after_paragraph = page.banner_after_paragraph | default: 4 %}
+        {% assign content_paragraphs = content | split: '</p>' %}
+        {% for paragraph in content_paragraphs %}
+          {{ paragraph }}
+          {% unless forloop.last %}
+            </p>
+            {% if forloop.index == banner_after_paragraph %}
+              <div class="my-8">
+                {% if page.banner == "banner.html" %}
+                  {% include banner.html %}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {{ content }}
+      {% endif %}
     </div>
 
     {% if page.tags.size >= 1 %}

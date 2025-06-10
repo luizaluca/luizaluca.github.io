@@ -5,6 +5,7 @@ description: Având în vedere că trăim în era stomatologiei moderne, blânde
 published_date: 28 Februarie 2025
 image: /assets/img/posts/anestezia.png
 tags: []
+banner: banner.html
 ---
 
 Având în vedere că trăim în era stomatologiei moderne, blânde, opțiunea de a imobiliza un copil și a-i efectua diverse tratamente stomatologice cu forța iese din ecuație.
