@@ -23,9 +23,7 @@ layout: default
             </p>
             {% if forloop.index == banner_after_paragraph %}
               <div class="my-8">
-                {% if page.banner == "banner.html" %}
-                  {% include banner.html %}
-                {% endif %}
+                {% include banner.html %}
               </div>
             {% endif %}
           {% endunless %}
