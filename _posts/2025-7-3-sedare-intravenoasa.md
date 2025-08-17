@@ -54,3 +54,33 @@ Așa cum am menționat mai sus, părinții vor primi o listă cu ce investigați
 Într-adevăr, nu este ușor, ca părinte, să faci o astfel de alegere. Poți avea impresia că tratamentele stomatologice nu merită o atenție atât de mare, însă gândește-te: copilul tău merită să zâmbească fără să aibă parte de bullying la grădiniță sau școală, merită să mănânce fără dureri și să se bucure de o înghețată cu adevărat.
 
 Dacă ai întrebări despre o astfel de procedură, nu ezita să mă contactezi.
+
+## Întrebări frecvente despre sedarea intravenoasă sau analgosedarea la copii
+
+### Ce vârstă trebuie să aibă copilul pentru sedare conștientă?
+
+Sedarea conștientă intravenoasă se recomandă, de regulă, la copiii cu vârsta de minimum 3 ani și o greutate peste 10 kg. La cei mai mici, riscurile pot fi mai mari, astfel că decizia se ia strict în urma evaluării medicale și a analizelor necesare.
+
+### Este sedarea intravenoasă periculoasă pentru copii?
+
+Sedarea intravenoasă este sigură atunci când este efectuată de echipa de anestezie și terapie intensivă (ATI), într-un mediu medical controlat. Riscurile există, ca în orice procedură medicală, dar sunt minimizate datorită monitorizării continue și dozării precise a medicamentelor.
+
+### Copilul meu are frică de dentist. Poate beneficia de sedare intravenoasă?
+
+Da, sedarea intravenoasă este o soluție ideală pentru copiii care au frică intensă de dentist, anxietate sau fobie dentară. Aceasta ajută la relaxarea copilului, reducerea fricii și permite efectuarea tratamentelor stomatologice fără durere și stres.
+
+### Care sunt efectele adverse ale sedării intravenoase la copii?
+
+Efectele adverse sunt rare, dar pot include greață, vărsături sau somnolență după procedură. Totuși, datorită monitorizării constante și dozajului atent, sedarea intravenoasă este în general bine tolerată și recuperarea este rapidă.
+
+### Cât durează efectul sedării intravenoase la copii?
+
+Efectul sedării intravenoase durează cât este nevoie pentru tratamentul stomatologic, adică între 30 de minute și 2 ore. Recuperarea este rapidă, iar copilul poate pleca acasă în aceeași zi, sub supraveghere atentă pentru câteva ore.
+
+### Se poate face tratament stomatologic fără durere la copii?
+
+Da, cu ajutorul sedării intravenoase sau analgosedării, tratamentele stomatologice la copii pot fi realizate fără durere. Sedarea reduce anxietatea și permite medicului pedodont să lucreze eficient, chiar și în cazul intervențiilor mai complexe.
+
+### Ce analize sunt necesare înainte de sedarea intravenoasă?
+
+Înainte de sedare, sunt necesare analize de sânge, EKG și, în unele cazuri, avizul medicului pediatru. Acestea verifică starea de sănătate a copilului și siguranța procedurii. Este esențial să fie respectate indicațiile legate de repausul alimentar înainte de intervenție.

@@ -11,15 +11,23 @@
     margin-top: 0;
     margin-bottom: 1rem;
   }
-  
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
     font-family: 'Cardo';
     line-height: 2;
     margin-bottom: 1rem;
   }
-  
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Cardo';
+    line-height: 1.75;
+    margin-bottom: 0.5rem;
+  }
+
   strong {
     font-weight: 600;
   }
@@ -29,5 +37,19 @@
     margin-top: 0;
     margin-bottom: 1rem;
     padding-left: 2rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+  p > img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.5rem;
   }
 }
