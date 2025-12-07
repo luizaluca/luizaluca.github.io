@@ -5,3 +5,4 @@ _site
 _site/
 .sass-cache/
 .jekyll-cache/
+tmp/
