@@ -9,3 +9,4 @@ tmp/
 AGENTS.md
 old*
 .agents/*
+node_modules/
