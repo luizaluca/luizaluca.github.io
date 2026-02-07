@@ -1,4 +1,9 @@
-# luizaluca.github.io
+# drluca.dental
 
-`jekyll serve --drafts`
+Astro + Tailwind static site (GitHub Pages).
 
+## Commands
+
+- `npm install`
+- `npm run dev`
+- `npm run build`
