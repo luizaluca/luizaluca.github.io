@@ -1,0 +1,65 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  contentHtml: string;
+}
+
+const { title, description, image, contentHtml } = Astro.props;
+---
+
+<BaseLayout title={title} description={description || title} image={image}>
+  <div class="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+    <article class="col-span-2">
+      <h1 class="jost text-4xl font-semibold leading-loose text-black">{title}</h1>
+      {
+        image && (
+          <div class="my-8">
+            <img class="max-w-full rounded" src={image} alt={title} loading="lazy" />
+          </div>
+        )
+      }
+      <div class="article-prose mt-6 jost" set:html={contentHtml} />
+    </article>
+  </div>
+
+  <div class="relative overflow-hidden bg-gray-50 px-8 py-32">
+    <div class="mx-auto flex max-w-7xl flex-col items-center px-4 sm:px-6 lg:px-8">
+      <div class="absolute inset-0 opacity-50 saturate-0 mix-blend-multiply">
+        <img src="/assets/img/who-am-i.png" alt="" class="h-full w-full object-cover" />
+      </div>
+      <h2 class="relative text-6xl font-semibold">Cine sunt eu?</h2>
+      <img src="/assets/img/pink border.svg" class="relative mt-3 w-24" alt="" />
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto my-12 flex max-w-lg flex-col items-center">
+      <img
+        class="max-w-full rounded object-cover lg:max-w-xl"
+        src="/assets/img/dr-luca-profile.png"
+        alt="Dr. Elena Luiza Luca"
+      />
+      <p class="mt-4 text-xl font-semibold text-gray-900">Dr. Elena Luiza Luca</p>
+      <p class="mb-4 mt-2 text-base font-medium text-gray-300">
+        Medic Dentist. Medic Specialist Pedodontie
+      </p>
+      <p class="mt-3 text-justify text-base leading-loose text-gray-500">
+        Numele meu este Elena Luiza Luca și sunt medic stomatolog și medic specialist pedodonție. Pe
+        lângă programul educațional din care fac parte, particip la cursuri de perfecționare
+        profesională care cuprind Psihologia pacientului pediatric, Materiale de actualitate din
+        pedodonție, Tratamente endodontice și coroane pediatrice, Laser în stomatologia pediatrică,
+        Traumatismele în pedodonție.
+      </p>
+    </div>
+
+    <a
+      href="/"
+      class="mx-auto flex max-w-lg items-center justify-center rounded-none border border-transparent bg-medicenter_color px-10 py-5 text-sm font-normal uppercase text-white"
+      >Mai multe despre mine</a
+    >
+  </div>
+</BaseLayout>

@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+interface Props {
+  text: string;
+}
+const { text } = Astro.props;
+---
+
+<div class="my-8 rounded border border-medicenter_color/40 bg-gray-50 p-6 text-center">
+  <p class="jost text-lg font-semibold text-gray-800" set:html={text} />
+  <a
+    href={`tel://${site.phoneNumber}`}
+    class="mt-4 inline-flex items-center justify-center rounded bg-medicenter_color px-6 py-3 text-sm uppercase text-white"
+    >Contactează-mă</a
+  >
+</div>

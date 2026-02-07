@@ -1,0 +1,43 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BlogPostLayout from '../../../../layouts/BlogPostLayout.astro';
+import { parseLegacyId } from '../../../../utils/posts';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const posts: CollectionEntry<'blog'>[] = await getCollection('blog');
+  return posts.map((post: CollectionEntry<'blog'>) => {
+    const parts = parseLegacyId(post.id);
+    return {
+      params: {
+        year: parts.year,
+        month: parts.monthPadded,
+        day: parts.dayPadded,
+        slug: parts.slug,
+      },
+      props: { post },
+    };
+  });
+}
+
+const { post } = Astro.props as { post: CollectionEntry<'blog'> };
+const bannerAfterParagraph = post.data.banner_after_paragraph ?? 4;
+let contentMarkdown = post.body;
+
+if (post.data.banner) {
+  const blocks = post.body.split(/\n{2,}/);
+  const bannerMarkdown = `<div class=\"my-8 rounded border border-medicenter_color/40 bg-gray-50 p-6 text-center\"><p class=\"jost text-lg font-semibold text-gray-800\">${post.data.banner}</p><a href=\"tel://+40741628279\" class=\"mt-4 inline-flex items-center justify-center rounded bg-medicenter_color px-6 py-3 text-sm uppercase text-white\">Contactează-mă</a></div>`;
+  const insertAt = Math.min(Math.max(bannerAfterParagraph, 1), blocks.length);
+  blocks.splice(insertAt, 0, bannerMarkdown);
+  contentMarkdown = blocks.join('\n\n');
+}
+
+const contentHtml = marked.parse(contentMarkdown, { async: false });
+---
+
+<BlogPostLayout
+  title={post.data.title}
+  description={post.data.description || post.data.title}
+  image={post.data.image}
+  contentHtml={contentHtml}
+/>

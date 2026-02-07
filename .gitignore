@@ -6,3 +6,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 tmp/
+AGENTS.md
+old*
+.agents/*

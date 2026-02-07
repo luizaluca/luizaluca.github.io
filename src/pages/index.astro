@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getSortedPosts, legacyPostPath } from '../utils/posts';
+
+const posts: CollectionEntry<'blog'>[] = await getSortedPosts();
+---
+
+<BaseLayout
+  title="Dr. Elena Luiza Luca"
+  description="Medic Dentist și Medic Specialist Pedodonție."
+>
+  <div class="relative bg-gray-900">
+    <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+      <img
+        src="/assets/img/hero_overlay.png"
+        alt="Overlay Doctor Patient"
+        class="h-full w-full object-cover"
+        style="object-position: 0% 10%;"
+      />
+    </div>
+    <div class="relative mx-auto flex max-w-7xl flex-col px-6 py-8 sm:py-24 lg:px-0">
+      <div class="max-w-7xl lg:px-8">
+        <div
+          class="max-w-md px-4 sm:max-w-2xl sm:px-6 lg:flex lg:items-center lg:px-0 lg:text-left"
+        >
+          <div>
+            <h1
+              class="my-4 text-4xl font-light tracking-wide text-gray-800 sm:my-5 sm:text-6xl lg:my-6 xl:text-6xl"
+            >
+              <span class="block pb-3 sm:pb-5"
+                ><span class="text-medicenter_color">Copiii</span>sunt cei mai</span
+              ><span class="font-semibold">îndrăgiți pacienți</span>
+            </h1>
+            <p class="text-lg text-gray-600 lg:text-xl">
+              Deși uneori poate fi dificil de stabilit o conexiune cu un mini-pacient, acesta este
+              scopul meu!
+            </p>
+            <div class="mt-10 flex sm:mt-12">
+              <a
+                href="tel://+40741628279"
+                class="inline-block items-center justify-center border border-transparent bg-medicenter_color px-10 py-5 text-base font-normal uppercase text-white"
+                >Hai să discutăm!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8 lg:pt-0">
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-8">
+        <div
+          class="mx-auto flex max-w-xl items-center px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0"
+        >
+          <div>
+            <h2 class="text-xl font-medium">Dragă părinte,</h2>
+            <img src="/assets/img/pink border.svg" class="mt-3 w-24" alt="" />
+            <div class="mt-6">
+              <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
+                Voi face tot posibilul să îți îndeplinesc cele mai înalte așteptări!
+              </h2>
+              <p class="mt-4 text-lg text-gray-500">
+                Știu că nu îți este ușor să alegi un medic pe mâna căruia să îți lași urmașul. Însă
+                te pot asigura că îmi voi da tot interesul ca micuțul tău să se simtă confortabil în
+                preajma mea și să primească cele mai bune tratamente.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
+          <img src="/assets/img/overflow.png" class="mx-auto max-h-96" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-100">
+    <div class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+      <div class="flex flex-col-reverse py-20 lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
+        <div class="mt-6 lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
+          <h2 class="text-4xl font-medium tracking-tight text-gray-900">
+            Abia aștept să redau zâmbetul copilului tău!
+          </h2>
+        </div>
+        <div
+          class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5"
+        >
+          <p class="text-lg text-gray-500">
+            Pedodonția modernă utilizează materiale de înaltă clasă și tehnologie actualizată,
+            astfel încât micii pacienți se vor simți confortabil în fotoliul dentar. Voi face tot
+            posibilul ca micuțul tău să se întoarcă de plăcere în cabinetul stomatologic!
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div class="bg-white p-8 shadow">
+          <h3 class="text-lg font-medium text-gray-900">Instructaj periaj și igienă</h3><p
+            class="mt-2 text-base text-gray-500"
+          >
+            Dinții sănătoși pornesc de la o tehnică de periaj corectă, o rutină corespunzătoare, cu
+            produse adecvate vârstei.
+          </p>
+        </div>
+        <div class="bg-white p-8 shadow">
+          <h3 class="text-lg font-medium text-gray-900">Coroane pedodontice</h3><p
+            class="mt-2 text-base text-gray-500"
+          >
+            Nu trebuie să ne gândim din prima la extracție, dacă avem și alte soluții la dispoziție.
+          </p>
+        </div>
+        <div class="bg-white p-8 shadow">
+          <h3 class="text-lg font-medium text-gray-900">Asistență telefonică</h3><p
+            class="mt-2 text-base text-gray-500"
+          >
+            Dacă apare o urgență și aveți nevoie de îndrumare, eu sunt la un apel distanță.
+          </p>
+        </div>
+        <div class="bg-white p-8 shadow">
+          <h3 class="text-lg font-medium text-gray-900">Materiale de calitate</h3><p
+            class="mt-2 text-base text-gray-500"
+          >
+            Materiale biocompatibile, cu rezultate predictibile și stabile pe termen lung.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative overflow-hidden bg-gray-50 px-8 py-32">
+    <div class="absolute inset-0 opacity-50 saturate-0 mix-blend-multiply">
+      <img src="/assets/img/who-am-i.png" alt="" class="h-full w-full object-cover" />
+    </div>
+    <div class="relative mx-auto flex max-w-7xl flex-col items-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-6xl font-semibold">Cine sunt eu?</h2>
+      <img src="/assets/img/pink border.svg" class="mt-3 w-24" alt="" />
+    </div>
+  </div>
+
+  <div class="mx-auto my-20 max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto mt-12 flex max-w-lg flex-col items-center">
+      <img
+        class="max-w-full rounded object-cover lg:max-w-xl"
+        src="/assets/img/dr-luca-profile.png"
+        alt="Dr. Elena Luiza Luca"
+      />
+      <p class="mt-4 text-xl font-semibold text-gray-900">Dr. Elena Luiza Luca</p>
+      <p class="mb-4 mt-2 text-base font-medium text-gray-400">
+        Medic Dentist. Medic Specialist Pedodonție
+      </p>
+      <p class="mt-3 text-justify text-base leading-loose text-gray-600">
+        Numele meu este Elena Luiza Luca și sunt medic stomatolog și medic specialist în pedodonție.
+        De-a lungul timpului, m-am specializat în descoperirea tehnicilor prin care pot ajuta atât
+        copiii tipici, cât și pe cei atipici, prin diverse modalități.
+      </p>
+    </div>
+  </div>
+
+  {
+    posts.length > 0 && (
+      <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <h3 class="mb-7 text-xl font-bold text-black">Articole</h3>
+        <div class="mb-9 border-b border-dashed text-gray-600" />
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          {posts.map((post) => (
+            <a href={legacyPostPath(post)} class="grid grid-cols-1 gap-4">
+              {post.data.image && (
+                <img
+                  alt={post.data.title}
+                  class="max-w-full rounded"
+                  loading="lazy"
+                  src={post.data.image}
+                />
+              )}
+              <div>
+                <h2 class="text-lg font-extrabold leading-loose text-black">{post.data.title}</h2>
+                <p class="my-3 leading-loose text-gray-600">
+                  {post.data.description || post.body.slice(0, 130)}
+                </p>
+                <div class="flex justify-between">
+                  <span class="text-xs font-bold text-gray-500">{post.data.published_date}</span>
+                  <span class="rounded bg-indigo-300 px-2 py-1 text-xs font-extrabold uppercase text-indigo-800">
+                    Blog
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</BaseLayout>
