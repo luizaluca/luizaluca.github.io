@@ -3,6 +3,7 @@ title: Cariile la copii și complicațiile lor
 description: Deși primul instinct al părinților ar fi să nu dea o foarte mare importanță cariilor la copii, impactul acestora asupra lor poate fi extrem de mare. Aici se poate discuta începând de la probleme estetice, până la probleme de vorbire, masticație, ajungând chiar și la probleme de sănătate generale, precum carențe sau deficite nutriționale.
 published_date: 21 Februarie 2026
 tags: []
+image: /assets/img/posts/cariile-la-copii.jpeg
 ---
 
 Deși primul instinct al părinților ar fi să nu dea o foarte mare importanță cariilor la copii, impactul acestora asupra lor poate fi extrem de mare. Aici se poate discuta începând de la probleme estetice, până la probleme de vorbire, masticație, ajungând chiar și la probleme de sănătate generale, precum carențe sau deficite nutriționale.
