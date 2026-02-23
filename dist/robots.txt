@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://drluca.dental/sitemap-index.xml

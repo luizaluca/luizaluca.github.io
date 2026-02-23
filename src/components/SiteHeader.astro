@@ -10,7 +10,7 @@ import { site } from '../data/site';
       >
         <a
           href={`tel://${site.phoneNumber}`}
-          class="flex flex-1 items-center justify-center whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-800 lg:flex-none"
+          class="flex flex-1 items-center justify-center whitespace-nowrap rounded-full border border-transparent px-3 py-1.5 text-sm font-medium uppercase text-gray-600 transition hover:bg-medicenter_color hover:text-white lg:flex-none"
         >
           <span class="mr-1">☎</span>{site.displayNumber}
         </a>
@@ -26,11 +26,18 @@ import { site } from '../data/site';
             class="hidden items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent px-3 py-1.5 text-sm font-medium uppercase text-gray-600 transition hover:bg-medicenter_color hover:text-white sm:inline-flex"
             >Galeria zâmbetelor</a
           >
-          <a href={site.instagram} class="text-sm font-medium text-gray-500 hover:text-gray-800"
+          <a
+            href="/carte/"
+            class="hidden items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent px-3 py-1.5 text-sm font-medium uppercase text-gray-600 transition hover:bg-medicenter_color hover:text-white sm:inline-flex"
+            >Carte</a
+          >
+          <a
+            href={site.instagram}
+            class="hidden items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent px-3 py-1.5 text-sm font-medium uppercase text-gray-600 transition hover:bg-medicenter_color hover:text-white sm:inline-flex"
             >Instagram</a
           >
         </div>
-        <div class="mobile-menu-toggle flex items-center">
+        <div class="mobile-menu-toggle flex items-center lg:hidden">
           <button
             type="button"
             class="rounded-md p-2 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-medicenter_color"
@@ -57,32 +64,48 @@ import { site } from '../data/site';
 
   <div
     id="mobile-menu"
-    class="fixed inset-x-0 top-0 z-50 hidden origin-top-right transform p-2 transition"
+    class="fixed inset-x-0 top-10 bottom-0 z-50 hidden p-2 transition lg:hidden sm:p-4"
     data-mobile-menu
   >
+    <button
+      type="button"
+      class="absolute inset-0 bg-black/25 backdrop-blur-[1px]"
+      aria-label="Închide meniul"
+      data-close-menu
+    ></button>
     <div
-      class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+      class="relative mx-auto w-full max-w-md divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
     >
       <div class="px-5 pb-6 pt-5">
         <div class="flex items-start justify-between">
           <nav class="space-y-4">
             <a
               href="/"
+              data-mobile-nav-link
               class="block text-base font-medium text-gray-900 hover:text-medicenter_color"
               >Dr. Elena Luiza Luca</a
             >
             <a
               href="/galeria-zambetelor/"
+              data-mobile-nav-link
               class="block text-base font-medium text-gray-900 hover:text-medicenter_color"
               >Galeria zâmbetelor</a
             >
             <a
+              href="/carte/"
+              data-mobile-nav-link
+              class="block text-base font-medium text-gray-900 hover:text-medicenter_color"
+              >Carte</a
+            >
+            <a
               href={site.instagram}
+              data-mobile-nav-link
               class="block text-base font-medium text-gray-900 hover:text-medicenter_color"
               >Instagram</a
             >
             <a
               href={`tel://${site.phoneNumber}`}
+              data-mobile-nav-link
               class="block text-base font-medium text-gray-900 hover:text-medicenter_color"
               >Sună: {site.displayNumber}</a
             >
@@ -116,21 +139,25 @@ import { site } from '../data/site';
   const root = document.querySelector('[data-menu-root]');
   const menu = document.querySelector('[data-mobile-menu]');
   const openBtn = document.querySelector('[data-open-menu]');
-  const closeBtn = document.querySelector('[data-close-menu]');
+  const closeBtns = Array.from(document.querySelectorAll('[data-close-menu]'));
+  const mobileNavLinks = Array.from(document.querySelectorAll('[data-mobile-nav-link]'));
 
   const closeMenu = () => {
     if (!menu || !openBtn) return;
     menu.classList.add('hidden');
     openBtn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('overflow-hidden');
   };
 
   openBtn?.addEventListener('click', () => {
     if (!menu) return;
     menu.classList.remove('hidden');
     openBtn.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('overflow-hidden');
   });
 
-  closeBtn?.addEventListener('click', closeMenu);
+  closeBtns.forEach((btn) => btn.addEventListener('click', closeMenu));
+  mobileNavLinks.forEach((link) => link.addEventListener('click', closeMenu));
 
   document.addEventListener('click', (event) => {
     if (!menu || menu.classList.contains('hidden')) return;
@@ -139,5 +166,13 @@ import { site } from '../data/site';
     if (!menu.contains(target) && !root?.contains(target)) {
       closeMenu();
     }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024) closeMenu();
   });
 </script>
